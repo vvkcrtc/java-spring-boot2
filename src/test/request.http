@@ -1,0 +1,15 @@
+GET http://localhost:8080/authorize?user=User1&password=pass1
+
+###
+
+GET http://localhost:8080/authorize?user=Admin&password=admin
+
+###
+
+GET http://localhost:8080/authorize?user=&password=pass1
+
+###
+
+GET http://localhost:8080/authorize?user=User3&password=pass3
+
+###
