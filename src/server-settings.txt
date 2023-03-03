@@ -1,0 +1,18 @@
+
+server {
+  listen 80;
+  listen [::]:80;
+
+
+  server_name localhost;
+
+  location /signin {
+    root   /home/vvk/tmp;
+    index  index.html index.htm;
+  }
+
+  location /authorize {
+    proxy_pass http://localhost:8080/authorize;
+  }
+}
+
